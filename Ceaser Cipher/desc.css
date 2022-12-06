@@ -1,0 +1,84 @@
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans");
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: "Josefin Sans", sans serif;
+  color: #fff;
+}
+
+body {
+  background: #34495e;
+}
+
+h1 {
+  text-transform: uppercase;
+}
+
+p {
+  text-align: justify;
+  font-size:23px;
+}
+
+section {
+  display: flex;
+  flex-direction: columns;
+  height: 100%;
+  position: relative;
+}
+
+section:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: url("https://c1.staticflickr.com/1/700/33168271301_35698586a8_c.jpg");
+  background-size: cover;
+  opacity: 0.8;
+}
+
+.intro {
+  margin: auto;
+  height:60%;
+  width: 60%;
+  position: relative;
+  z-index: 1;
+}
+
+.btn {
+  display: block;
+  position: relative;
+  margin: 0 auto;
+  padding: 1.2em 3em;
+  border-radius: 2px;
+  border: 1px solid #ecf0f1;
+  background: rgba(174, 178, 183, 0.1);
+  color: #ecf0f1;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  -moz-transition: all 0.25s ease-in-out;
+  -webkit-transition: all 0.25s ease-in-out;
+  transition: all 0.25s ease-in-out;
+}
+
+.btn:hover {
+  border: 1px solid #111;
+  background: #222;
+  color: #fff;
+}
+
+.btn:focus {
+  border: 1px solid #111;
+  background: #111;
+  color: #fff;
+}
+
+@media only screen and (max-width: 800px) {
+  .intro {
+    width: 80%;
+  }
+}

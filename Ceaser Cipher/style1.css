@@ -1,0 +1,60 @@
+body {
+animation: changeBackgroundColor 7s infinite;
+padding: 50px 0;
+margin: 0;
+background-color: #eee;
+font-family: consolas, monospace;
+}
+@keyframes changeBackgroundColor {
+    0% {
+      background-color: teal;
+    }
+    50% {
+      background-color: chocolate;
+    }
+    100% {
+      background-color: teal;
+    }
+}
+
+.container {
+background: white;
+max-width: 75%;
+margin: 0 auto;
+padding: 15px;
+box-shadow: 1px 1px 2px rgba(0,0,0,0.12), 3px 3px 6px rgba(0,0,0,0.24);
+}
+
+.text-center {
+text-align: center;
+}
+
+.subheader {
+text-transform: uppercase;
+font-size: 14px;
+}
+
+.color-red {
+color: darkgray;
+}
+
+.color-blue {
+color: darkgray;
+}
+
+input {
+padding: 0.5rem;
+font-size: 16px;
+border: 2px solid #ccc;
+border-radius: 4px;
+}
+
+.user-input {
+min-width: 50%;
+}
+
+.cipher-output {
+min-height: 38px;
+border-left: 10px solid;
+padding-left: 15px;
+}
